@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+</body>
+<script type="text/javascript">
+   function forward() {
+      with (document.convert) {
+   unit1.value = unit1.value.toString().replace(/[^\d\.eE-]/g,'');
+	 if (unit1.value*0.425143706 != 0)
+	    unit2.value = unit1.value*0.425143706;
+      }
+   }
+   function backward() {
+      with (document.convert) {
+	 unit2.value = unit2.value.toString().replace(/[^\d\.eE-]/g,'');
+	 if (unit2.value/0.425143706 != 0)
+	    unit1.value = unit2.value/0.425143706;
+      }
+   }
+</script>
+<br><br><h1>
+<p style="color:Blue;margin-left:20px;"><span class="title_grn">Convert MPG to KML</span></h1></p>
+<noscript><p><font color="red">	</font></p></noscript>
+<form name="convert" 
+<p><big><strong>
+<input type=text name="unit1" size=22 maxlength=100
+ onblur="forward()" value=""> mpg<br />
+<input type=text name="unit2" size=22 maxlength=100
+ onblur="backward()" value=""> km/l<br />
+<input type=button value="Convert!"
+ onclick="forward()"></strong></big></p>
+</form>
+<body style="background-color:yellow;">
+<h2 style="background-color:red;">mpg = (km/lt) * 2.352</h2>
+<h3 style="background-color:green;">km/lt = mpg * 0.425</h3>
+</body>
+<img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-prn1/v/46713_10151474318936079_1343781627_n.jpg?oh=397399b7d427a7aa19b0ee9a62e61415&oe=510F26E7&__gda__=1360042005_32b17d384ba4194f6234cfd8b6af022d" alt="22s" width=550 height=400>
+
+</html>
