@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <img src="https://sphotos-b.xx.fbcdn.net/hphotos-ash3/861258_10151513734396079_239144422_o.jpg" alt="Error" width="765" height="300">'
+<center>
+<img src="https://sphotos-b.xx.fbcdn.net/hphotos-ash3/861258_10151513734396079_239144422_o.jpg" alt="Error" width="765" height="300">'
 
 <body>
 <h1>JMU List</h1>
@@ -50,5 +51,5 @@ Re-Enter Password: <input type="text" name="Re-enterPassword"><br>
 			</option></select>
 			<input id="go" type="submit" value="&gt;">
 		</form>
-
+</center>
 </html>
